@@ -8,12 +8,12 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: "Barcadia",
-    description: "A super-fast site using GatsbyJS",
-    author: "Morgan Baker",
-    twitterUsername: "@dave",
+    title: "OmegaDAO",
+    description: "A Multi-Chain Alpha Reserve",
+    author: "OmegaDAO",
+    twitterUsername: "@omegadaofi",
     image: "/yellow-metal-design-decoration.jpg",
-    siteUrl: "https://barcadia.netlify.com",
+    siteUrl: "https://omegadao.finance",
   },
   /* Your site config here */
   plugins: [
@@ -44,8 +44,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://barcadia.netlify.com",
-        sitemap: "https://barcadia.netlify.com/sitemap.xml",
+        host: "https://omegadao.finance",
+        sitemap: "https://omegadao.finance/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },

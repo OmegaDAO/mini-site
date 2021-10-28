@@ -8,15 +8,9 @@ const BasicTextModule = () => {
     <BasicTextModuleStyles>
       <div className="container">
         <h2>
-          A super-fast theme that is easy to get started, using the power of
-          GatsbyJS
+          A Multi-Chain Alpha Reserve 
         </h2>
-        <p style={{ marginBottom: "60px" }}>
-          Using modern CSS properties such as grid, this theme is optmised for
-          speed and mobile devices. Giving users an excellent experience on any
-          device. Future-proofing your product.
-        </p>
-        <Button text="View Products" as={Link} to="/products" />
+        <Button text="View App" as={Link} to="https://staging.omegadao.finance" />
       </div>
     </BasicTextModuleStyles>
   )

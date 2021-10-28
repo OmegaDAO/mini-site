@@ -90,28 +90,4 @@ export const FooterStyles = styled.footer`
       }
     }
   }
-
-  .copyright {
-    font-size: 13px;
-
-    p {
-      margin: 0;
-
-      a {
-        color: #fff;
-        font-weight: 700;
-        text-decoration: none;
-        transition: color 0.3s ease;
-
-        &:hover,
-        &:focus {
-          color: var(--primary);
-        }
-
-        span {
-          color: var(--primary);
-        }
-      }
-    }
-  }
 `

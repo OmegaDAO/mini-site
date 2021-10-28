@@ -1,45 +1,50 @@
 import * as React from "react"
 import {
-  FaFacebookSquare as Facebook,
-  FaTwitterSquare as Twitter,
-  FaInstagram as Instagram,
-  FaLinkedin as Linkedin,
+    FaMedium as Medium,
+    FaTwitter as Twitter,
+    FaDiscord as Discord,
+    FaGithub as Github,
 } from "react-icons/fa"
 
 export const menuItems = [
-  {
-    path: "/",
-    text: "home",
-  },
-  {
-    path: "/products",
-    text: "products",
-  },
-  {
-    path: "/blog",
-    text: "blog",
-  },
-  {
-    path: "/contact",
-    text: "contact",
-  },
+    {
+        path: "/",//"https://staging.omegadao.finance",
+        text: "app",
+    },
+    {
+        path: "/",//"https://omegadao.medium.com",
+        text: "medium",
+    },
+    {
+        path: "/",//"https://twitter.com/omegadaofi",
+        text: "twitter",
+    },
+    {
+        path: "/",//"https://discord.com",
+        text: "discord",
+    },
+    {
+        path: "/",//"https://github.com/OmegaDAO",
+        text: "github",
+    },
+
 ]
 
 export const socialItems = [
-  {
-    path: "www.facebook.com",
-    icon: <Facebook />,
-  },
-  {
-    path: "www.twitter.com",
-    icon: <Twitter />,
-  },
-  {
-    path: "www.instagram.com",
-    icon: <Instagram />,
-  },
-  {
-    path: "www.linkedin.com",
-    icon: <Linkedin />,
-  },
+    {
+        path: "/",//"https://omegadao.medium.com",
+        icon: <Medium />,
+    },
+    {
+        path: "/",//"https://twitter.com/omegadaofi",
+        icon: <Twitter />,
+    },
+    {
+        path: "/",//"https://discord.com",
+        icon: <Discord />,
+    },
+    {
+        path: "/",//"https://github.com/OmegaDAO",
+        icon: <Github />,
+    },
 ]

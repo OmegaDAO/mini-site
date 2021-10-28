@@ -1,18 +1,22 @@
 export const menuItems = [
-  {
-    path: "/",
-    text: "home",
+   {
+    path: "/",//"https://staging.omegadao.finance",
+    text: "app",
   },
   {
-    path: "/products",
-    text: "products",
+    path: "/",//"https://omegadao.medium.com",
+    text: "medium",
   },
   {
-    path: "/blogs",
-    text: "blogs",
+    path: "/",//"https://twitter.com/omegadaofi",
+    text: "twitter",
   },
   {
-    path: "/contact",
-    text: "contact",
+    path: "/",//"https://discord.com",
+    text: "discord",
+  },
+  {
+    path: "/",//"https://github.com/OmegaDAO",
+    text: "github",
   },
 ]

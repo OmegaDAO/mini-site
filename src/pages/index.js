@@ -3,24 +3,17 @@ import Layout from "../components/Layout"
 import Seo from "../components/SEO"
 import BannerModule from "../components/BannerModule/BannerModule"
 import BasicTextModule from "../components/BasicTextModule/BasicTextModule"
-import PerksModule from "../components/PerksModule/PerksModule"
-import Perk from "../components/PerksModule/Perk"
-import Features from "../components/Features/Features"
 
 const Index = () => {
   return (
     <>
-      <Seo title="Home" />
+      <Seo title="OmegaDAO" />
       <Layout>
         <BannerModule
-          title="Barcadia"
-          subTitle="A product based template system for GatsbyJS"
+          title="OmegaDAO"
+          subTitle="Guide Your Alpha"
         />
         <BasicTextModule />
-        <PerksModule>
-          <Perk title="The Title" content="The content" />
-        </PerksModule>
-        <Features />
       </Layout>
     </>
   )
