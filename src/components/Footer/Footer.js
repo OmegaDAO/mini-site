@@ -12,10 +12,15 @@ const Footer = () => {
             {menuItems.map((item, index) => {
               return (
                 <li key={index}>
-                  <Link to={item.path} activeClassName="menu__item--active">
+                  <a
+                    href={item.path}
+                    target="_blank"
+                    rel="nofollow noreferrer noopener"
+                    activeClassName="menu__item--active"
+                  >
                     {item.text}
                     <span>.</span>
-                  </Link>
+                  </a>
                 </li>
               )
             })}

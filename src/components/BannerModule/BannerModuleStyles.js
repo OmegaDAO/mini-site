@@ -13,16 +13,31 @@ export const BannerModuleStyles = styled.section`
   }
 
   .banner__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    display: flex;
+    justify-content: center;
     z-index: 1;
+    width: 100%;
+    max-width: 90vh;
+    margin: auto;
+ 
+    @media (max-width: 1008px) {
+      margin-top: 80px;
+      padding-top: 80px;
+    }
+    @media (max-width: 768px) {
+      margin-top: 150px;
+    }
   }
 
   .banner__content {
-    position: relative;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .banner__content {
+    position: absolute;
+    top: 50%;
     z-index: 2;
     min-height: 33vh;
     width: 100%;

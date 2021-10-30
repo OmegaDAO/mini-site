@@ -14,6 +14,7 @@ module.exports = {
     twitterUsername: "@omegadaofi",
     image: "/yellow-metal-design-decoration.jpg",
     siteUrl: "https://omegadao.finance",
+    icon: 'src/images/omegadao.ico',
   },
   /* Your site config here */
   plugins: [
@@ -36,9 +37,9 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        spaceId: '5bycdsxl27ue',
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        accessToken: '929dFA5HasJQAf49cd2Ww8ubSOm9Tek8utu5IW4uNYQ',
       },
     },
     {

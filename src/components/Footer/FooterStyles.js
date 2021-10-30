@@ -5,6 +5,8 @@ export const FooterStyles = styled.footer`
   padding: var(--sectionPadding) 25px 40px 25px;
 
   .container {
+    position: relative;
+    z-index: 1000;
     display: flex;
     flex-direction: column;
 

@@ -1,9 +1,9 @@
-import React, { useContext } from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
-import MenuContext from "../MenuContext"
+
 import { NavModuleStyles } from "./NavModuleStyles"
 import { motion } from "framer-motion"
-import { menuItems } from "./NavConstants"
+
 import {
   barOneVariants,
   barTwoVariants,
@@ -13,10 +13,13 @@ import {
 import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
 
 const NavModule = () => {
-  const [isOpen, setNav] = useContext(MenuContext)
+  const [isOpen, setNav] = useState(false)
 
-  const toggleNav = () => {
-    setNav(isOpen => !isOpen)
+  const openNav = () => {
+    setNav(!isOpen)
+  }
+  const closeNav = () => {
+    setNav(false)
   }
 
   const { title } = UseSiteMetadata()
@@ -28,7 +31,7 @@ const NavModule = () => {
           <motion.button
             initial="closed"
             animate={isOpen ? "open" : "closed"}
-            onClick={toggleNav}
+            onClick={openNav}
             aria-label={isOpen ? "Close Menu" : "Open Menu"}
             className={`hamburger${isOpen ? " open" : ""}`}
           >
@@ -64,14 +67,62 @@ const NavModule = () => {
         className="menu"
       >
         <ul>
-          {menuItems.map((item, index) => (
-            <li onClick={toggleNav} key={index}>
-              <Link to={item.path} activeClassName="menu__item--active">
-                {item.text}
-                <span>.</span>
-              </Link>
-            </li>
-          ))}
+          <li onClick={closeNav}>
+            <a
+              href="https://staging.omegadao.finance"
+              activeClassName="menu__item--active"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+            >
+              app
+              <span>.</span>
+            </a>
+          </li>
+          <li onClick={closeNav}>
+            <a
+              href="https://omegadao.medium.com"
+              activeClassName="menu__item--active"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+            >
+              medium
+              <span>.</span>
+            </a>
+          </li>
+
+          <li onClick={closeNav}>
+            <a
+              href="https://twitter.com/omegadaofi"
+              activeClassName="menu__item--active"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+            >
+              twitter
+              <span>.</span>
+            </a>
+          </li>
+          <li onClick={closeNav}>
+            <a
+              href="https://discord.com"
+              activeClassName="menu__item--active"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+            >
+              discord
+              <span>.</span>
+            </a>
+          </li>
+          <li onClick={closeNav}>
+            <a
+              href="https://github.com/OmegaDAO"
+              activeClassName="menu__item--active"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+            >
+              github
+              <span>.</span>
+            </a>
+          </li>
         </ul>
       </motion.div>
     </NavModuleStyles>
