@@ -12,6 +12,7 @@ const Index = () => {
         <BannerModule title="OmegaDAO" subTitle="Guide Your Alpha" />
         <BasicTextModule />
         <div className="container">
+          <h1 className='faq-title'>FAQ</h1>
           <Faq />
         </div>
       </Layout>
