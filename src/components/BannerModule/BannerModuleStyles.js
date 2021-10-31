@@ -15,17 +15,24 @@ export const BannerModuleStyles = styled.section`
   .banner__image {
     display: flex;
     justify-content: center;
-    z-index: 1;
+    z-index: -1000;
     width: 100%;
-    max-width: 90vh;
+    max-width: 600px;
     margin: auto;
- 
+    padding-top: 20px;
     @media (max-width: 1008px) {
       margin-top: 80px;
       padding-top: 80px;
     }
+    @media (max-width: 1008px) {
+      max-width: 550px;
+      margin: 100px auto 0px;
+      padding-top: 0px;
+    }
     @media (max-width: 768px) {
-      margin-top: 150px;
+      max-width: 300px;
+      margin: 180px auto 0px;
+      padding-top: 0px;
     }
   }
 

@@ -14,10 +14,22 @@ module.exports = {
     twitterUsername: "@omegadaofi",
     image: "/yellow-metal-design-decoration.jpg",
     siteUrl: "https://omegadao.finance",
-    icon: 'src/images/omegadao.ico',
+    icon: "src/images/omegadao.ico",
   },
   /* Your site config here */
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `OmegaDAO`,
+        short_name: `OmegaDAO`,
+        start_url: `https://omegadao.finance`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/symbol.svg`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     {
@@ -37,9 +49,9 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: '5bycdsxl27ue',
+        spaceId: "5bycdsxl27ue",
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: '929dFA5HasJQAf49cd2Ww8ubSOm9Tek8utu5IW4uNYQ',
+        accessToken: "929dFA5HasJQAf49cd2Ww8ubSOm9Tek8utu5IW4uNYQ",
       },
     },
     {

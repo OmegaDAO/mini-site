@@ -19,7 +19,7 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
           <StaticImage
             className="banner__image"
          
-            src="../../images/omegadao.jpg"
+            src="../../images/symbol.svg"
             alt="Banner Image"
          
             placeholder="blurred"
