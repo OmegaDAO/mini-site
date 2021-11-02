@@ -4,7 +4,9 @@ export const BannerModuleStyles = styled.section`
   height: 100vh;
   position: relative;
   padding: 30px var(--borderSpacing);
-
+  @media (max-width: 768px) {
+    height: auto;
+    }
   .container {
     height: 100%;
     display: flex;
@@ -30,8 +32,8 @@ export const BannerModuleStyles = styled.section`
       padding-top: 0px;
     }
     @media (max-width: 768px) {
-      max-width: 300px;
-      margin: 180px auto 0px;
+      width: 100%;
+      margin: 100px auto 0px;
       padding-top: 0px;
     }
   }
